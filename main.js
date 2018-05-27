@@ -4,7 +4,23 @@ const connection = require('./connection').start();
 
 var pusher = new Pusher('de504dc5763aeef9ff52');
 
-const pairsList = ['btc_usd', 'eth_usd', 'btc_eur'];
+const pairsList = [
+	'btc_usd',
+	'btc_eur',
+	'eur_usd',
+	'xrp_usd',
+	'xrp_eur',
+	'xrp_btc',
+	'ltc_usd',
+	'ltc_eur',
+	'ltc_btc',
+	'eth_usd',
+	'eth_eur',
+	'eth_btc',
+	'bch_usd',
+	'bch_eur',
+	'bch_btc'
+];
 
 pairsList.forEach(function(pair,n){
 	//channels subscription
